@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditEntryActivity"
+    android:onClick="hideKeyboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_back_select_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_arrow_back_blue_24dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="90dp"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="35dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/add_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Entry"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"/>
+
+            <ImageView
+                android:id="@+id/entry_image"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/add_image" />
+
+            <EditText
+                android:id="@+id/entry_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Judul"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/entry_kategori"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/entry_provinsi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/entry_asal_daerah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="@string/asal_daerah"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/entry_keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="@string/keterangan"
+                android:inputType="textMultiLine" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                >
+
+                <Button
+                    android:id="@+id/cancel_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_toStartOf="@id/produk"
+                    android:background="@drawable/button_style"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:strokeColor="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/produk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_style"
+                    android:text="@string/simpan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:strokeColor="@color/colorPrimaryDark" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

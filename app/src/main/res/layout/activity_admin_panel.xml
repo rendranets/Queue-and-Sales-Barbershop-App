@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AdminPanel">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/back_admin_panel"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_arrow_back_blue_24dp" />
+
+        <View
+            android:id="@+id/line_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_google_signin_btn_text_light_disabled"
+            android:layout_below="@id/back_admin_panel"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/title_admin_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Admin Panel"
+            android:textStyle="bold"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="32sp"
+            android:layout_below="@id/back_admin_panel"
+            />
+
+        <TextView
+            android:id="@+id/hint_admin_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignStart="@id/title_admin_panel"
+            android:layout_below="@id/title_admin_panel"
+            android:text="Admin panel di khusus kan untuk mendownload report dari data yang bersifat umum"
+            android:textColor="@color/dark_dark_gray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/report_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hint_admin_panel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_report"
+            android:drawableStart="@drawable/ic_file_download_white_24dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/location"
+            android:text="Report User"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hint_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignStart="@id/report_user"
+            android:layout_below="@id/report_user"
+            android:text="Download report 10 user dengan produk terbanyak"
+            android:textColor="@color/dark_dark_gray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/report_entry_terbaru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hint_user"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_report"
+            android:drawableStart="@drawable/ic_file_download_white_24dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/location"
+            android:text="Report Produk"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hint_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignStart="@id/report_user"
+            android:layout_below="@id/report_entry_terbaru"
+            android:text="Download Report Produk"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp"
+            />
+
+
+        <TextView
+            android:id="@+id/report_transaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hint_entry"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_report"
+            android:drawableStart="@drawable/ic_file_download_white_24dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/location"
+            android:text="Report Transaksi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hint_report_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignStart="@id/report_user"
+            android:layout_below="@id/report_transaksi"
+            android:text="Download Report Transaksi"
+            android:textColor="@color/dark_dark_gray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/report_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hint_report_transaksi"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_report"
+            android:drawableStart="@drawable/ic_file_download_white_24dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/location"
+            android:text="Report Antrian"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hint_report_antrian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignStart="@id/report_user"
+            android:layout_below="@id/report_antrian"
+            android:text="Download Report Antria Hari Ini"
+            android:textColor="@color/dark_dark_gray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/edit_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hint_report_antrian"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_report"
+            android:drawableStart="@drawable/ic_edit_black_24dp"
+            android:drawablePadding="8dp"
+            android:hint="@string/location"
+            android:text="Edit Produk"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hint_edit_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignStart="@id/report_user"
+            android:layout_below="@id/edit_kategori"
+            android:text="Edit dan tambahan kategori"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

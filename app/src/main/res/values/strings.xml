@@ -1,0 +1,117 @@
+<resources>
+    <string-array name="provinsi_array">
+        <item>Aceh</item>
+        <item>Sumatera Utara</item>
+        <item>Sumatera Barat</item>
+        <item>Riau</item>
+        <item>Kepulauan Riau</item>
+        <item>Jambi</item>
+        <item>Bengkulu</item>
+        <item>Sumatera Selatan</item>
+        <item>Kepulauan Bangka Belitung</item>
+        <item>Lampung</item>
+        <item>Banten</item>
+        <item>Jawa Barat</item>
+        <item>DKI Jakarta</item>
+        <item>Jawa Tengah</item>
+        <item>DI Yogyakarta</item>
+        <item>Jawa Timur</item>
+        <item>Bali</item>
+        <item>Nusa Tenggara Barat</item>
+        <item>Nusa Tenggara Timur</item>
+        <item>Kalimantan Utara</item>
+        <item>Kalimantan Barat</item>
+        <item>Kalimantan Tengah</item>
+        <item>Kalimantan Selatan</item>
+        <item>Kalimantan Timur</item>
+        <item>Gorontalo</item>
+        <item>Sulawesi Utara</item>
+        <item>Sulawesi Barat</item>
+        <item>Sulawesi Tengah</item>
+        <item>Sulawesi Selatan</item>
+        <item>Sulawesi Tenggara</item>
+        <item>Maluku Utara</item>
+        <item>Maluku</item>
+        <item>Papua Barat</item>
+        <item>Papua</item>
+    </string-array>
+
+
+    <string-array name="status_array">
+        <item>Menunggu</item>
+        <item>Batal</item>
+        <item>Selesai</item>
+    </string-array>
+
+    <string-array name="kategori_array">
+        <item>Alat Musik</item>
+        <item>Cerita Rakyat</item>
+        <item>Makanan Minuman</item>
+        <item>Motif Kain</item>
+        <item>Musik dan Lagu</item>
+        <item>Naskah Kuno dan Prasati</item>
+        <item>Ornamen</item>
+        <item>Pakaian Tradisional</item>
+        <item>Permainan Tradisional</item>
+        <item>Produk Arsitektur</item>
+        <item>Ritual</item>
+        <item>Seni Pertunjukan</item>
+        <item>Senjata dan Alat Perang</item>
+        <item>Tarian</item>
+        <item>Pengobatan</item>
+    </string-array>
+
+
+    <string name="app_name">ROCKMAN</string>
+    <string name="rockman_barbershop">ROCKMAN BARBERSHOP</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_collection">Koleksi Produk</string>
+    <string name="nav_add">Toko</string>
+    <string name="nav_home">Home</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="toko_fragment">Toko fragment</string>
+    <string name="koleksi_fragment">Koleksi Fragment</string>
+    <string name="profil_fragment">Profil Fragment</string>
+    <string name="lokasi_cabang">Lokasi Cabang</string>
+    <string name="cari_data_antrian">Cari data antian</string>
+    <string name="search">cari</string>
+    <string name="location">lokasi</string>
+    <string name="atau">atau</string>
+    <string name="telusuri">Telusuri</string>
+    <string name="cari_lokasi_budaya">Cari lokasi budaya</string>
+    <string name="saat_ini_di_gunakan">Saat ini di gunakan</string>
+    <string name="tipe_entry">Tipe Entry</string>
+    <string name="judul">Judul</string>
+    <string name="asal_daerah">Asal Daerah</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="sisipkan_berkas">Sisipkan Berkas</string>
+    <string name="simpan">Simpan</string>
+    <string name="login">Login</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="nomor_telpon">Nomor Telpon</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="nama_lengkap">Nama lengkap</string>
+    <string name="user">User</string>
+    <string name="phone">Phone</string>
+    <string name="logout">Logout</string>
+    <string name="entry_collection">Entry Collection</string>
+    <string name="tambah_antrian">Tambah Antrian</string>
+    <string name="askLogin">Login untuk dapat menambah data budaya</string>
+    <string name="isi">isi seluruh kolom yang ada</string>
+    <string name="perbarui_profil">Perbarui Profil</string>
+    <string name="edit">Edit</string>
+
+    <string name="deskripsi">DESKRIPSI</string>
+    <string name="lorem_ipsum">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="cancel">Batal</string>
+    <string name="laporkan"><u>Laporkan</u>.</string>
+    <string name="data">DATA</string>
+    <string name="profile">Profile</string>
+    <string name="lencana">Lencana</string>
+    <string name="urutan">Urutan</string>
+    <string name="nama_kategori">Nama Kategori</string>
+    <string name="stock_barang">Stock Barang</string>
+    <string name="harga_barang">Harga Barang</string>
+    <string name="nama_barang">Nama Barang</string>
+</resources>

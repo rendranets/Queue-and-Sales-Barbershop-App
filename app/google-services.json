@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "450393589656",
+    "firebase_url": "https://rockman-barbershop.firebaseio.com",
+    "project_id": "rockman-barbershop",
+    "storage_bucket": "rockman-barbershop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450393589656:android:ec1e308a52653135d08ded",
+        "android_client_info": {
+          "package_name": "com.dicoding.pdbi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450393589656-0ch5qdg2pim3r18qqmhkl0siude6e37s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iGNEJBaAlYpjfhPnaHNXqW9H3F5GTio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450393589656-0ch5qdg2pim3r18qqmhkl0siude6e37s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450393589656:android:d654e83c0082d1a2d08ded",
+        "android_client_info": {
+          "package_name": "com.rendranets.rockman_barbershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450393589656-4nontav9tir885fmgtebepi9634f1rm6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rendranets.rockman_barbershop",
+            "certificate_hash": "2ad4b09b0fe88586c36a8d8007b73d90e25efb9e"
+          }
+        },
+        {
+          "client_id": "450393589656-0ch5qdg2pim3r18qqmhkl0siude6e37s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iGNEJBaAlYpjfhPnaHNXqW9H3F5GTio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450393589656-0ch5qdg2pim3r18qqmhkl0siude6e37s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

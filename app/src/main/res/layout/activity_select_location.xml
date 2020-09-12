@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SelectLocation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            android:drawablePadding="8dp" />
+
+        <ImageButton
+            android:id="@+id/button_back_select_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_white_24dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/search_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"
+            android:layout_toEndOf="@id/button_back_select_location"
+            android:text="Pilih lokasi budaya"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/used_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saat_ini_di_gunakan"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/search_bg"
+            />
+
+        <TextView
+            android:id="@+id/default_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/used_location"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/search_input_style"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:hint="@string/location"
+            android:text="@string/lokasi_cabang"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_location"
+            android:layout_width="410dp"
+            android:layout_height="536dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            tools:listitem="@layout/list_location"
+            android:layout_below="@id/default_location"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

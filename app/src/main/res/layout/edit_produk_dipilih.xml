@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/entry_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+                android:text="Edit Produk"
+            android:textStyle="bold"
+            android:textColor="@color/dark_dark_gray"
+            android:textSize="32sp"
+            />
+
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignStart="@id/entry_collection"
+            android:layout_below="@id/entry_collection"
+            android:text="Isi seluruh form"
+            android:textColor="@color/dark_dark_gray"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="90dp"
+        android:layout_marginTop="85dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="35dp"
+            android:paddingTop="35dp">
+
+            <ImageView
+                android:id="@+id/edit_entry_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/add_image"
+                android:layout_marginBottom="20dp"/>
+
+
+            <EditText
+                android:id="@+id/edit_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="@string/nama_barang"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="@string/keterangan"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="@string/stock_barang"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="@string/harga_barang"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginBottom="20dp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                >
+
+                <Button
+                    android:id="@+id/cancel_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_toStartOf="@id/confirm_edit"
+                    android:background="@drawable/button_style"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:strokeColor="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/confirm_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_style"
+                    android:text="@string/simpan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:strokeColor="@color/colorPrimaryDark" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

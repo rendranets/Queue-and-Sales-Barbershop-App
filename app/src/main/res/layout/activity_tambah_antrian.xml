@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/tambah_bg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/barber1"
+            android:backgroundTint="#7E7E8C"
+            android:backgroundTintMode="multiply"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/brandon_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_style"
+        android:orientation="vertical"
+        android:layout_marginTop="-20dp"
+        android:paddingTop="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tambah_antrian"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/brandon_medium"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="Anda akan menambah antrian pelayanan pangkas rambut di Rockman Barbershop, antrian yang sudah dibuat tidak dapat di batalkan"
+            android:layout_marginBottom="35dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="Nama :"
+            android:layout_marginBottom="5dp"
+            android:textColor="#9F2E1906"
+            />
+
+        <TextView
+            android:id="@+id/tv_nama_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Unknow"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="Nomor Antrian"
+            android:textColor="#9F2E1906"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_nomor_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="00"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_batal_antrian"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:background="@drawable/button_style"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:strokeColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/button_tambah_antrian"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/button_batal_antrian"
+            android:background="@drawable/button_style"
+            android:text="@string/simpan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:strokeColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
